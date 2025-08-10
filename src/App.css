@@ -1,0 +1,234 @@
+/* Spin Wheel Start */
+.spin-area .spn-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spin-area .spn-wrap .spin-ttl h4 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  
+  .spin-area .spn-wrap .spin-ttl p {
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 28px;
+  }
+  
+  .spin-area .spn-wrap .spn-bt-txt {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    line-height: 28px;
+  }
+  
+  .spin-area .spin-container {
+    position: relative;
+    width: fit-content;
+    margin: 50px auto;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .spin-area .spin-button-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .spin-area .spin-button {
+    background-color: #05683a;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .gTLZXx {
+    display: none !important;
+  }
+  
+  .spin-area .markerBox {
+    position: absolute;
+    z-index: 9;
+    width: 18%;
+    right: 9px;
+    top: 29px;
+  }
+  
+  /* Responsive version of markerBox (you need media queries for this manually) */
+  @media screen and (max-width: 576px) {
+    .spin-area .markerBox {
+      width: 13vw;
+      right: 3vw;
+      top: 7vw;
+    }
+  }
+  
+  .spin-area .markerBox img {
+    width: 100%;
+    height: 100%;
+    rotate: 19deg;
+    filter: drop-shadow(2px 4px 6px #00000078);
+  }
+  
+  @media screen and (max-width: 576px) {
+    .spin-area .markerBox img {
+      rotate: 20deg;
+    }
+  }
+  
+  .spinModal {
+    color: #ffffff;
+  }
+  
+  .spinModal .ant-modal-close {
+    background-color: #fff;
+    color: #05683a;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+  }
+  
+  .spinModal .ant-modal-close:hover {
+    background-color: #ffffffb8;
+    color: #05683a;
+  }
+  
+  .spinModal .ant-modal-content {
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(2deg, rgb(42, 155, 81) 0%, rgb(23 49 33) 100%);
+  }
+  
+  .spinModal .ant-modal-header {
+    background-color: transparent;
+    color: #ffffff;
+  }
+  
+  .spinModal .ant-modal-title {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .spinModal .ant-modal-body .spn-rlt .spn-title {
+    font-size: 34px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .spinModal .ant-modal-body .spn-rlt .spn-rlt-info {
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+    padding: 21px 10px;
+    border: 1px dashed #fff;
+  }
+  
+  .spinModal .ant-modal-body .spn-rlt .spn-rlt-info .spn-desc {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+  
+  .spinModal .ant-modal-body .spn-rlt .spn-rlt-info .spn-note {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .spinModal .ant-modal-body .spn-rlt .spn-txt {
+    margin-top: 20px;
+  }
+  
+  .spinModal .ant-modal-body .spn-rlt .spn-txt .spn-chance {
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .spinModal .ant-modal-body .spn-rlt .spn-txt .ref-num {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  .spinModal .ant-modal-body .spn-rlt .spn-txt .ref-num span {
+    font-weight: 700;
+  }
+  
+  .spinModal .ant-modal-footer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .spinModal .ant-modal-footer button {
+    width: calc(50% - 10px);
+    background-color: #fff;
+    color: #05683a;
+    height: 40px;
+    font-family: "Poppins";
+    font-weight: 700;
+    border-radius: 8px;
+    border: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .spinModal .ant-modal-footer button:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #ffffff;
+  }
+  
+  .spin-area{
+    background: #3a3838;
+  }
+
+  .spin-chance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  
+  .spin-chance h4{
+    color:#ffffff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 34px;
+  }
+
+  .spin-chance p{
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 28px;
+  }
